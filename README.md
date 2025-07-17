@@ -104,214 +104,108 @@ Now, we are ready for:
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/generated_images.png" alt="generated_images" > <br /> Some images that are decoded from latent vectors drawn from a normal distribution </p>
 
 
-
-
-
 ### **Latent Vector Interpolation**
-
-
 
 UMAP is by default an unsupervised learning, but we can add labels to make it supervised. By conditioning on labels, we can target our desired attribute from the dataset (e.g., the CelebA dataset) since the compressed latent embeddings will cluster neatly. This is useful for latent vector interpolation. By doing so, we can see decoded images under a linear transition between a negative vector and a positive vector. These vectors can be obtained by finding the centroid of each cluster. Don't forget to add noise based on the dispersion of the cluster. This will sample a vector of the relevant member in the cluster.
 
-
-
 * 👩‍🦳 Gray Hair
-
-
 
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/gray_hair_interpolated_images.png" alt="gray_hair_interpolated_images" > <br /> Interpolation from a non-gray-haired person to a gray-haired person  </p>
 
-
-
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/gray_hair_interpolated_animation.gif" alt="gray_hair_interpolated_animation" > <br /> Animated interpolation from a non-gray-haired person to a gray-haired person  </p>
-
-
 
 * ⬛️ Black Hair
 
-
-
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/black_hair_interpolated_images.png" alt="black_hair_interpolated_images" > <br /> Interpolation from a non-black-haired person to a black-haired person  </p>
-
-
 
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/black_hair_interpolated_animation.gif" alt="black_hair_interpolated_animation" > <br /> Animated interpolation from a non-black-haired person to a black-haired person  </p>
 
-
-
 * 🟫 Brown Hair
-
-
 
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/brown_hair_interpolated_images.png" alt="brown_hair_interpolated_images" > <br /> Interpolation from a non-brown-haired person to a brown-haired person  </p>
 
-
-
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/brown_hair_interpolated_animation.gif" alt="brown_hair_interpolated_animation" > <br /> Animated interpolation from a non-brown-haired person to a brown-haired person  </p>
-
-
 
 * 👱 Blond Hair
 
-
-
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/blond_hair_interpolated_images.png" alt="blond_hair_interpolated_images" > <br /> Interpolation from a non-blond-haired person to a blond-haired person  </p>
-
-
 
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/blond_hair_interpolated_animation.gif" alt="blond_hair_interpolated_animation" > <br /> Animated interpolation from a non-blond-haired person to a blond-haired person  </p>
 
-
-
 * 💥 Bangs
-
-
 
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/bangs_interpolated_images.png" alt="bangs_interpolated_images" > <br /> Interpolation from a person without bangs to a person with bangs  </p>
 
-
-
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/bangs_interpolated_animation.gif" alt="bangs_interpolated_animation" > <br /> Animated interpolation from a person without bangs to a person with bangs  </p>
-
-
 
 * 👨‍🦲 Bald
 
-
-
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/bald_interpolated_images.png" alt="bald_interpolated_images" > <br /> Interpolation from a person with hair to a person without hair </p>
-
-
 
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/bald_interpolated_animation.gif" alt="bald_interpolated_animation" > <br /> Animated interpolation from a person with hair to a person without hair </p>
 
-
-
 * ❌🧔‍♂️ No Beard
-
-
 
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/no_beard_interpolated_images.png" alt="no_beard_interpolated_images" > <br /> Interpolation from a person with a beard to a person without a beard </p>
 
-
-
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/no_beard_interpolated_animation.gif" alt="no_beard_interpolated_animation" > <br /> Animated interpolation from a person with a beard to a person without a beard </p>
-
-
 
 * ☀️ Pale Skin
 
-
-
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/pale_skin_interpolated_images.png" alt="pale_skin_interpolated_images" > <br /> Interpolation from a non-pale-skinned person to a person with pale skin </p>
-
-
 
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/pale_skin_interpolated_animation.gif" alt="pale_skin_interpolated_animation" > <br /> Animated interpolation from a non-pale-skinned person to a person with pale skin </p>
 
-
-
 * 👄 Mouth Slightly Open
-
-
 
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/mouth_slightly_open_interpolated_images.png" alt="mouth_slightly_open_interpolated_images" > <br /> Interpolation from a person with a mouth closed to a person with a mouth slightly open </p>
 
-
-
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/mouth_slightly_open_interpolated_animation.gif" alt="mouth_slightly_open_interpolated_animation" > <br /> Animated interpolation from a person with a mouth closed to a person with a mouth slightly open </p>
-
-
 
 * 😃 Smiling
 
-
-
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/smiling_interpolated_images.png" alt="smiling_interpolated_images" > <br /> Interpolation from a non-smiling person to a smiling person </p>
-
-
 
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/smiling_interpolated_animation.gif" alt="smiling_interpolated_animation" > <br /> Animated interpolation from a non-smiling person to a smiling person </p>
 
-
-
 * 🥚 Oval Face
-
-
 
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/oval_face_interpolated_images.png" alt="oval_face_interpolated_images" > <br /> Interpolation from a non-oval-faced person to an oval-faced person </p>
 
-
-
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/oval_face_interpolated_animation.gif" alt="oval_face_interpolated_animation" > <br /> Animated interpolation from a non-oval-faced person to an oval-faced person </p>
-
-
 
 * 👨‍🦱 Male
 
-
-
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/male_interpolated_images.png" alt="male_interpolated_images" > <br /> Interpolation from a female to a male </p>
-
-
 
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/male_interpolated_animation.gif" alt="male_interpolated_animation" > <br /> Animated interpolation from a female to a male </p>
 
 
-
-
-
 ### **Latent Space Traversal**
-
-
 
 Given the 2D latent space visualized based on the target attribute, we can pinpoint our desired location in the space and decode it to the respective image.
 
-
-
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/latent_space_grid.png" alt="latent_space_grid" > <br /> The 2D latent space in a 15 × 15 image grid </p>
 
-
-
 <table>
-
-&nbsp;   <tr>
-
-&nbsp;       <td align="center"> 
-
-&nbsp;           <img src="./assets/left.png">
-
-&nbsp;           Image at (-0.857, 0.0)
-
-&nbsp;       </td>
-
-&nbsp;       <td align="center"> 
-
-&nbsp;           <img src="./assets/origin.png">
-
-&nbsp;           Image at origin (0.0, 0.0)
-
-&nbsp;       </td>
-
-&nbsp;       <td align="center"> 
-
-&nbsp;           <img src="./assets/right.png">
-
-&nbsp;           Image at (0.857, 0.0)
-
-&nbsp;       </td>
-
-&nbsp;   </tr>
-
+    <tr>
+        <td align="center"> 
+            <img src="./assets/left.png">
+            Image at (-0.857, 0.0)
+        </td>
+        <td align="center"> 
+            <img src="./assets/origin.png">
+            Image at (0.0, 0.0)
+        </td>
+        <td align="center"> 
+            <img src="./assets/right.png">
+            Image at (0.857, 0.0)
+        </td>
+    </tr>
 </table>
 
 
-
-
-
 ## **References**
-
-
 
 1. D. P. Kingma and M. Welling, "Auto-Encoding Variational Bayes," arXiv:1312.6114 [stat.ML], 2022. [Online]. Available: [https://arxiv.org/abs/1312.6114](https://arxiv.org/abs/1312.6114)
 2. [L. Cayton and others, "Algorithms for manifold learning," *Univ. of California at San Diego Tech. Rep.*, vol. 12, no. 1-17, pp. 1, 2005.](https://cseweb.ucsd.edu/~lcayton/resexam.pdf)
