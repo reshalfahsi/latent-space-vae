@@ -5,7 +5,7 @@
     <br />
 </div>
 
-VAE and latent space are the inseparable duo in representation learning. VAE uses the latent space as a constraint on how excellent data reconstruction should be. With a controlled latent space, we can simply regulate the data-generating process. On this occasion, we will go on an excursion across a latent space. We'll see what we can do in this "Chamber of Secrets." In the latent space, latent vectors (or variables) coexist harmoniously. Let's see "Fantastic Latent Vectors and How to Find Them."
+VAE and the latent space are the inseparable duo in representation learning. VAE uses the latent space as a constraint on how excellent data reconstruction should be. With a controlled latent space, we can simply regulate the data-generating process. On this occasion, we will go on an excursion across a latent space. We'll see what we can do in this "Chamber of Secrets." In the latent space, latent vectors (or variables) coexist harmoniously. Let's see "Fantastic Latent Vectors and How to Find Them."
 
 ## **Latent Space**
 
