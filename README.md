@@ -31,7 +31,7 @@ The latent space is the space of all possible $\mathbf{z}$'s. Here $f(\mathbf{z}
 In our interest, the purpose of VAEs is to create a meaningful latent space from a dataset. VAEs have two parts (similar to the basic autoencoder): the encoder and the decoder. The encoder compresses the data into latent vectors that live in a constrained latent space (unlike the vanilla autoencoder). The decoder maps the latent vectors back to the data. As generative models (by the commandment of MLE (Maximum Likelihood Estimation)), VAEs attempt to maximize the **marginal likelihood** of the data. 
 
 $$
-p\_\theta(\mathbf{x}) = \int p\_\theta(\mathbf{x}, \mathbf{z}) \, d\mathbf{z} = \int p\_\theta(\mathbf{x} | \mathbf{z}) \, p(\mathbf{z}) \, d\mathbf{z}
+p\_\theta(\mathbf{x}) = \int p\_\theta(\mathbf{x}, \mathbf{z}) d\mathbf{z} = \int p\_\theta(\mathbf{x} | \mathbf{z}) p(\mathbf{z}) d\mathbf{z}
 $$
 
 Where:
@@ -45,13 +45,13 @@ Yet, there is a catch. Computing the marginal likelihood as is will be intractab
 * We start with the log marginal likelihood:
 
 $$
-\log p\_\theta(\mathbf{x}) = \log \int p\_\theta(\mathbf{x}, \mathbf{z}) \, d\mathbf{z}
+\log p\_\theta(\mathbf{x}) = \log \int p\_\theta(\mathbf{x}, \mathbf{z}) d\mathbf{z}
 $$
 
 * Multiply and divide by $q_\phi(\mathbf{z}|\mathbf{x})$:
 
 $$
-= \log \int q_\phi(\mathbf{z}|\mathbf{x}) \frac{p\_\theta(\mathbf{x}, \mathbf{z})}{q\_\phi(\mathbf{z}|\mathbf{x})} \, d\mathbf{z}
+= \log \int q_\phi(\mathbf{z}|\mathbf{x}) \frac{p\_\theta(\mathbf{x}, \mathbf{z})}{q\_\phi(\mathbf{z}|\mathbf{x})} d\mathbf{z}
 $$
 
 * Apply **Jensen's Inequality** to the log of an expectation:
@@ -69,19 +69,19 @@ $$
 * Decomposing the joint:
 
 $$
-= \mathbb{E}\_{q\_\phi(\mathbf{z}|\mathbf{x})} \left\[ \log p\_\theta(\mathbf{x}|\mathbf{z}) \right] - D\_{\mathrm{KL}} \left( q\_\phi(\mathbf{z}|\mathbf{x}) \,||\, p(\mathbf{z}) \right)
+= \mathbb{E}\_{q\_\phi(\mathbf{z}|\mathbf{x})} \left\[ \log p\_\theta(\mathbf{x}|\mathbf{z}) \right] - D\_{\mathrm{KL}} \left( q\_\phi(\mathbf{z}|\mathbf{x}) || p(\mathbf{z}) \right)
 $$
 
 * So the final form is:
 
 $$
-\log p\_\theta(\mathbf{x}) \geq \mathcal{L}(\theta, \phi; \mathbf{x}) = \underbrace{\mathbb{E}\_{q\_\phi(\mathbf{z}|\mathbf{x})} \[\log p\_\theta(\mathbf{x}|\mathbf{z})]}\_{\text{Reconstruction Term}} - \underbrace{D\_{\mathrm{KL}} \left( q\_\phi(\mathbf{z}|\mathbf{x}) \,||\, p(\mathbf{z}) \right)}\_{\text{Regularization Term}}
+\log p\_\theta(\mathbf{x}) \geq \mathcal{L}(\theta, \phi; \mathbf{x}) = \underbrace{\mathbb{E}\_{q\_\phi(\mathbf{z}|\mathbf{x})} \[\log p\_\theta(\mathbf{x}|\mathbf{z})]}\_{\text{Reconstruction Term}} - \underbrace{D\_{\mathrm{KL}} \left( q\_\phi(\mathbf{z}|\mathbf{x}) || p(\mathbf{z}) \right)}\_{\text{Regularization Term}}
 $$
 
 All in all, the VAE's training objective is to maximize the Evidence Lower Bound (ELBO), which is typically minimized as a loss function:
 
 $$
-\mathcal{L}\_{\text{VAE}}(\theta, \phi; \mathbf{x}) = - \mathbb{E}\_{q\_\phi(\mathbf{z}|\mathbf{x})} \[\log p\_\theta(\mathbf{x}|\mathbf{z})] + D\_{\mathrm{KL}} \left( q\_\phi(\mathbf{z}|\mathbf{x}) \,||\, p(\mathbf{z}) \right)
+\mathcal{L}\_{\text{VAE}}(\theta, \phi; \mathbf{x}) = - \mathbb{E}\_{q\_\phi(\mathbf{z}|\mathbf{x})} \[\log p\_\theta(\mathbf{x}|\mathbf{z})] + D\_{\mathrm{KL}} \left( q\_\phi(\mathbf{z}|\mathbf{x}) || p(\mathbf{z}) \right)
 $$
 
 ## **Latent Space Exploration via UMAP**
