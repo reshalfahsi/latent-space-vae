@@ -1,7 +1,7 @@
 # **Exploring Latent Space via VAE**
 
 <div align="center">
-    <a href="https://colab.research.google.com/github/reshalfahsi/latent-space-vae/blob/master/Exploring_Latent_Space_via_VAE.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="colab"></a>
+    <a href="https://colab.research.google.com/github/reshalfahsi/latent-space-vae/blob/main/Exploring_Latent_Space_via_VAE.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="colab"></a>
     <br />
 </div>
 
@@ -12,7 +12,6 @@ VAE and latent space are the inseparable duo in representation learning. VAE u
 As the name suggests, a latent space is a hidden abstraction created by compressing higher-dimensional data. There exist latent vectors that lie in the space and are used to reconstruct the observed data manifold. The **manifold hypothesis** roughly posits that real-world data $\mathbf{x} \in \mathbb{R}^D$ lies near a manifold $\mathcal{M} \subset \mathbb{R}^D$. Then:
 
 * Latent vector $\mathbf{z} \in \mathbb{R}^d$
-
 * There exists a **smooth** function $f: \mathbb{R}^d \to \mathcal{M} \subset \mathbb{R}^D$, such that $\mathbf{x} \approx f(\mathbf{z})$
 
 
@@ -102,7 +101,7 @@ Now, we are ready for:
 
 ### **Random Sampling**
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/generated_images.png" alt="generated_images" > <br /> Some images that are decoded from latent vectors drawn from a normal distribution </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/generated_images.png" alt="generated_images" > <br /> Some images that are decoded from latent vectors drawn from a normal distribution </p>
 
 
 
@@ -120,11 +119,11 @@ UMAP is by default an unsupervised learning, but we can add labels to make it su
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/gray_hair_interpolated_images.png" alt="gray_hair_interpolated_images" > <br /> Interpolation from a non-gray-haired person to a gray-haired person  </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/gray_hair_interpolated_images.png" alt="gray_hair_interpolated_images" > <br /> Interpolation from a non-gray-haired person to a gray-haired person  </p>
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/gray_hair_interpolated_animation.png" alt="gray_hair_interpolated_animation" > <br /> Animated interpolation from a non-gray-haired person to a gray-haired person  </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/gray_hair_interpolated_animation.png" alt="gray_hair_interpolated_animation" > <br /> Animated interpolation from a non-gray-haired person to a gray-haired person  </p>
 
 
 
@@ -132,11 +131,11 @@ UMAP is by default an unsupervised learning, but we can add labels to make it su
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/black_hair_interpolated_images.png" alt="black_hair_interpolated_images" > <br /> Interpolation from a non-black-haired person to a black-haired person  </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/black_hair_interpolated_images.png" alt="black_hair_interpolated_images" > <br /> Interpolation from a non-black-haired person to a black-haired person  </p>
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/black_hair_interpolated_animation.png" alt="black_hair_interpolated_animation" > <br /> Animated interpolation from a non-black-haired person to a black-haired person  </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/black_hair_interpolated_animation.png" alt="black_hair_interpolated_animation" > <br /> Animated interpolation from a non-black-haired person to a black-haired person  </p>
 
 
 
@@ -144,11 +143,11 @@ UMAP is by default an unsupervised learning, but we can add labels to make it su
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/brown_hair_interpolated_images.png" alt="brown_hair_interpolated_images" > <br /> Interpolation from a non-brown-haired person to a brown-haired person  </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/brown_hair_interpolated_images.png" alt="brown_hair_interpolated_images" > <br /> Interpolation from a non-brown-haired person to a brown-haired person  </p>
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/brown_hair_interpolated_animation.png" alt="brown_hair_interpolated_animation" > <br /> Animated interpolation from a non-brown-haired person to a brown-haired person  </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/brown_hair_interpolated_animation.png" alt="brown_hair_interpolated_animation" > <br /> Animated interpolation from a non-brown-haired person to a brown-haired person  </p>
 
 
 
@@ -156,11 +155,11 @@ UMAP is by default an unsupervised learning, but we can add labels to make it su
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/blond_hair_interpolated_images.png" alt="blond_hair_interpolated_images" > <br /> Interpolation from a non-blond-haired person to a blond-haired person  </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/blond_hair_interpolated_images.png" alt="blond_hair_interpolated_images" > <br /> Interpolation from a non-blond-haired person to a blond-haired person  </p>
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/blond_hair_interpolated_animation.png" alt="blond_hair_interpolated_animation" > <br /> Animated interpolation from a non-blond-haired person to a blond-haired person  </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/blond_hair_interpolated_animation.png" alt="blond_hair_interpolated_animation" > <br /> Animated interpolation from a non-blond-haired person to a blond-haired person  </p>
 
 
 
@@ -168,11 +167,11 @@ UMAP is by default an unsupervised learning, but we can add labels to make it su
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/bangs_interpolated_images.png" alt="bangs_interpolated_images" > <br /> Interpolation from a person without bangs to a person with bangs  </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/bangs_interpolated_images.png" alt="bangs_interpolated_images" > <br /> Interpolation from a person without bangs to a person with bangs  </p>
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/bangs_interpolated_animation.png" alt="bangs_interpolated_animation" > <br /> Animated interpolation from a person without bangs to a person with bangs  </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/bangs_interpolated_animation.png" alt="bangs_interpolated_animation" > <br /> Animated interpolation from a person without bangs to a person with bangs  </p>
 
 
 
@@ -180,11 +179,11 @@ UMAP is by default an unsupervised learning, but we can add labels to make it su
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/bald_interpolated_images.png" alt="bald_interpolated_images" > <br /> Interpolation from a person with hair to a person without hair </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/bald_interpolated_images.png" alt="bald_interpolated_images" > <br /> Interpolation from a person with hair to a person without hair </p>
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/bald_interpolated_animation.png" alt="bald_interpolated_animation" > <br /> Animated interpolation from a person with hair to a person without hair </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/bald_interpolated_animation.png" alt="bald_interpolated_animation" > <br /> Animated interpolation from a person with hair to a person without hair </p>
 
 
 
@@ -192,11 +191,11 @@ UMAP is by default an unsupervised learning, but we can add labels to make it su
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/no_beard_interpolated_images.png" alt="no_beard_interpolated_images" > <br /> Interpolation from a person with a beard to a person without a beard </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/no_beard_interpolated_images.png" alt="no_beard_interpolated_images" > <br /> Interpolation from a person with a beard to a person without a beard </p>
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/no_beard_interpolated_animation.png" alt="no_beard_interpolated_animation" > <br /> Animated interpolation from a person with a beard to a person without a beard </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/no_beard_interpolated_animation.png" alt="no_beard_interpolated_animation" > <br /> Animated interpolation from a person with a beard to a person without a beard </p>
 
 
 
@@ -204,11 +203,11 @@ UMAP is by default an unsupervised learning, but we can add labels to make it su
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/pale_skin_interpolated_images.png" alt="pale_skin_interpolated_images" > <br /> Interpolation from a non-pale-skinned person to a person with pale skin </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/pale_skin_interpolated_images.png" alt="pale_skin_interpolated_images" > <br /> Interpolation from a non-pale-skinned person to a person with pale skin </p>
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/pale_skin_interpolated_animation.png" alt="pale_skin_interpolated_animation" > <br /> Animated interpolation from a non-pale-skinned person to a person with pale skin </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/pale_skin_interpolated_animation.png" alt="pale_skin_interpolated_animation" > <br /> Animated interpolation from a non-pale-skinned person to a person with pale skin </p>
 
 
 
@@ -216,11 +215,11 @@ UMAP is by default an unsupervised learning, but we can add labels to make it su
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/mouth_slightly_open_interpolated_images.png" alt="mouth_slightly_open_interpolated_images" > <br /> Interpolation from a person with a mouth closed to a person with a mouth slightly open </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/mouth_slightly_open_interpolated_images.png" alt="mouth_slightly_open_interpolated_images" > <br /> Interpolation from a person with a mouth closed to a person with a mouth slightly open </p>
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/mouth_slightly_open_interpolated_animation.png" alt="mouth_slightly_open_interpolated_animation" > <br /> Animated interpolation from a person with a mouth closed to a person with a mouth slightly open </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/mouth_slightly_open_interpolated_animation.png" alt="mouth_slightly_open_interpolated_animation" > <br /> Animated interpolation from a person with a mouth closed to a person with a mouth slightly open </p>
 
 
 
@@ -228,11 +227,11 @@ UMAP is by default an unsupervised learning, but we can add labels to make it su
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/smiling_interpolated_images.png" alt="smiling_interpolated_images" > <br /> Interpolation from a non-smiling person to a smiling person </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/smiling_interpolated_images.png" alt="smiling_interpolated_images" > <br /> Interpolation from a non-smiling person to a smiling person </p>
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/smiling_interpolated_animation.png" alt="smiling_interpolated_animation" > <br /> Animated interpolation from a non-smiling person to a smiling person </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/smiling_interpolated_animation.png" alt="smiling_interpolated_animation" > <br /> Animated interpolation from a non-smiling person to a smiling person </p>
 
 
 
@@ -240,11 +239,11 @@ UMAP is by default an unsupervised learning, but we can add labels to make it su
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/oval_face_interpolated_images.png" alt="oval_face_interpolated_images" > <br /> Interpolation from a non-oval-faced person to an oval-faced person </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/oval_face_interpolated_images.png" alt="oval_face_interpolated_images" > <br /> Interpolation from a non-oval-faced person to an oval-faced person </p>
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/oval_face_interpolated_animation.png" alt="oval_face_interpolated_animation" > <br /> Animated interpolation from a non-oval-faced person to an oval-faced person </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/oval_face_interpolated_animation.png" alt="oval_face_interpolated_animation" > <br /> Animated interpolation from a non-oval-faced person to an oval-faced person </p>
 
 
 
@@ -252,11 +251,11 @@ UMAP is by default an unsupervised learning, but we can add labels to make it su
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/male_interpolated_images.png" alt="male_interpolated_images" > <br /> Interpolation from a female to a male </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/male_interpolated_images.png" alt="male_interpolated_images" > <br /> Interpolation from a female to a male </p>
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assets/male_interpolated_animation.png" alt="male_interpolated_animation" > <br /> Animated interpolation from a female to a male </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/male_interpolated_animation.png" alt="male_interpolated_animation" > <br /> Animated interpolation from a female to a male </p>
 
 
 
@@ -270,7 +269,7 @@ Given the 2D latent space visualized based on the target attribute, we can pinpo
 
 
 
-<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/master/assetslatent_space_grid.png" alt="latent_space_grid" > <br /> The 2D latent space in a 15 × 15 image grid </p>
+<p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assetslatent_space_grid.png" alt="latent_space_grid" > <br /> The 2D latent space in a 15 × 15 image grid </p>
 
 
 
