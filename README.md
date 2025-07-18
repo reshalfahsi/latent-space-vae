@@ -39,7 +39,7 @@ Where:
 * $p(\mathbf{z})$ is the latent space distribution, hence $\mathbf{z} \sim p(\mathbf{z})$. 
 * $p\_\theta(\mathbf{x} | \mathbf{z})$ is the decoder, hence $\mathbf{x} \sim p\_\theta(\mathbf{x} | \mathbf{z})$.
 
-Yet, there is a catch. Computing the marginal likelihood as is will be intractable, because the encoder is implemented in a neural network (i.e., notoriously non-linear), and the integral is over a high-dimensional latent space. Enter variational inference. We can utilize an **approximate posterior** (i.e., the encoder) $q\_\phi(\mathbf{z} | \mathbf{x})$, parameterized by $\phi$, to approximate the true posterior $p\_\theta(\mathbf{z} | \mathbf{x})$. Thus, we can calculate:
+Yet, there is a catch. Computing the marginal likelihood as is will be intractable, because the encoder is implemented in a neural network (i.e., notoriously non-linear), and the integral is over a high-dimensional latent space. Enter **variational inference**. We can utilize an **approximate posterior** (i.e., the encoder) $q\_\phi(\mathbf{z} | \mathbf{x})$, parameterized by $\phi$, to approximate the true posterior $p\_\theta(\mathbf{z} | \mathbf{x})$. Thus, we can calculate:
 
 * We start with the log marginal likelihood:
 
