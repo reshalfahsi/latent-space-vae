@@ -183,7 +183,7 @@ UMAP is by default an unsupervised learning, but we can add labels to make it su
 
 ### **Latent Space Traversal**
 
-Given the 2D latent space visualized based on the target attribute, we can pinpoint our desired location in the space and decode it to the respective image.
+Given the 2D latent space visualized based on the target attribute, we can pinpoint our desired location in the space and decode it to the respective image. The x- and y-axes stretch from -1 to 1.
 
 <p align="center"> <img src="https://github.com/reshalfahsi/latent-space-vae/blob/main/assets/latent_space_grid.png" alt="latent_space_grid" > <br /> The 2D latent space in a 15 × 15 image grid </p>
 
